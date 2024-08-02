@@ -1,0 +1,58 @@
+@import url(../style/fonts.css);
+
+/* **** Root **** */
+:root {
+    --CB: 'Comfortaa-Bold';
+    --CR: 'Comfortaa-Regular';
+    --MR: 'Monserrat-Regular';
+    --MB: 'Monserrat-Bold';
+    --RM: 'Roboto-Medium';
+    --RR: 'Roboto-Regular';
+    --dark_blue: #040D1F;
+    --white: #ffffff;
+    --grey: #C8C8C8;
+    --orang: #ED8E00;
+}
+
+/* *** Root end *** */
+
+
+.footer {
+    background: linear-gradient(90deg, #FF8C30 0%, #9F4700 100%);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.80);
+    padding: 24px 0;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-right__text {
+    color: var(--white);
+    text-align: right;
+    font-family: var(--CB);
+    font-size: 18px;
+    letter-spacing: 0.18px;
+    line-height: 20px;
+}
+
+.footer-left img:first-of-type {
+    margin-right: 50px;
+}
+
+/* ***** Media start ***** */
+
+@media (max-width: 800px) {
+    .footer-row {
+        flex-direction: column;
+    }
+
+    .footer-right__text {
+        margin-top: 20px;
+    }
+}
+
+
+/* ***** Media end ***** */
